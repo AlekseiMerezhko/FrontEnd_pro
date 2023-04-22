@@ -57,12 +57,6 @@ class Animal {
         console.log("run animal")
     }
 }
-
-
-class Goose {
-
-}
-
 class Rabbit extends Animal {
     constructor(name, earLength) {
         super(name);
@@ -70,10 +64,18 @@ class Rabbit extends Animal {
         this.earLength = earLength;
     }
     run(){
-        console.log("run rabbit")
-        super.run()
+        console.log("run rabbit");
+        // super.run()
     }
 }
+class Shape{
+    widyj: 
+}
+
+class Circle extends Shape{
+borderRadius
+}
+
 
 class Cat extends Animal {
     constructor(value) {
@@ -90,3 +92,14 @@ let rabbit = new Rabbit("Белый кролик", 10);
 
 alert(rabbit.name); // Белый кролик
 alert(rabbit.earLength); // 10
+
+
+
+// function multiple(a) {
+//     return function(b){
+//         return a * b
+//     }
+// }
+
+// const double = multiple.bind(null, 2)
+
