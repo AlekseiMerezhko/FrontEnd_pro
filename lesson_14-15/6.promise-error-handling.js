@@ -7,9 +7,9 @@
 // Например, в представленном ниже примере для fetch указана неправильная ссылка (сайт не существует),
 // и .catch перехватывает ошибку:
 
-fetch("https://no-such-server.blabla") // ошибка
-    .then((response) => response.json())
-    .catch((err) => alert(err)); // TypeError: failed to fetch (текст может отличаться)
+// fetch("https://no-such-server.blabla") // ошибка
+//     .then((response) => response.json())
+//     .catch((err) => console.log(err)); // TypeError: failed to fetch (текст может отличаться)
 
 // Как видно, .catch не обязательно должен быть сразу после ошибки,
 // он может быть далее, после одного или даже нескольких .then
@@ -71,9 +71,9 @@ window.addEventListener("unhandledrejection", function (event) {
     alert(event.reason); // Error: Ошибка! - объект ошибки, которая не была обработана
 });
 
-new Promise(function () {
-    throw new Error("Ошибка!");
-}); // нет обработчика ошибок
+// new Promise(function () {
+//     throw new Error("Ошибка!");
+// }); // нет обработчика ошибок
 
 // Если происходит ошибка, и отсутствует её обработчик, то генерируется событие unhandledrejection,
 // и соответствующий объект event содержит информацию об ошибке.
